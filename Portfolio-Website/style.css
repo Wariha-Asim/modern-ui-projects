@@ -414,10 +414,10 @@ resize: none;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 2rem 2rem; /* Increased padding for left and right */
+        padding: 2rem 2rem;
         background: var(--bg-color);
         flex-wrap: wrap;
-       /* Adds space around the footer */
+      
     }
     
     .footer-text {
@@ -428,11 +428,11 @@ resize: none;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        padding: 1.2rem 1.4rem; /* Adjusted padding for more spacing */
+        padding: 1.2rem 1.4rem; 
         background: var(--main-color);
         border-radius: .8rem;
         transition: .5s ease;
-        margin-right: 2rem; /* Added margin to move the icon away from the edge */
+        margin-right: 2rem; 
     }
     
     .footer-icontop a:hover {
@@ -451,16 +451,16 @@ resize: none;
     .skill-container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between; /* Distribute space evenly between items */
+        justify-content: space-between; 
         gap: 2rem;
-        max-width: 100%; /* Ensure the container spans full width */
+        max-width: 100%; 
     }
     
     .skill {
-        width: 24%; /* Adjust based on the number of skills to ensure they fit in one row */
+        width: 24%; 
         display: flex;
         flex-direction: column;
-        align-items: center; /* Center align the skill items */
+        align-items: center;
         margin-bottom: 2rem;
     }
     
@@ -499,7 +499,7 @@ resize: none;
         z-index: 1;
     }
     
-    /* Setting individual skill percentages */
+    
     .html { --percent: 70; }
     .css { --percent: 65; }
     .javascript { --percent: 40; }
@@ -525,7 +525,7 @@ resize: none;
     }
 
     .skill {
-        width: 22%; /* Adjust the width to keep them aligned */
+        width: 22%; 
     }
 }
 
@@ -558,7 +558,7 @@ padding: 10rem 3%;
     }
 
     .skill {
-        width: 30%; /* Adjust for smaller screens */
+        width: 30%; 
     }
 }
 
@@ -574,7 +574,7 @@ padding: 10rem 3%;
     }
 
     .skill {
-        width: 45%; /* Two skills per row */
+        width: 45%; 
         margin-bottom: 2rem;
     }
     #menu-icon{
@@ -656,7 +656,7 @@ grid-template-columns: repeat(2,1fr);
     }
 
     .skill {
-        width: 100%; /* One skill per row */
+        width: 100%; 
         margin-bottom: 1.5rem;
     }
 
@@ -678,31 +678,29 @@ grid-template-columns: repeat(2,1fr);
     }
 
     .skill {
-        width: 100%; /* Full-width for very small screens */
+        width: 100%; 
         margin-bottom: 1.5rem;
     }
 }
-/* Media Queries */
 
-/* For screens 1200px and below */
 @media(max-width: 1200px) {
     .images-container img {
-        width: 120px; /* Adjust the width as needed */
+        width: 120px; 
     }
 }
 
-/* For screens 991px and below */
+
 @media(max-width: 991px) {
     .achievement-box {
         padding: 15px;
     }
 
     .images-container img {
-        width: 100px; /* Adjust the width as needed */
+        width: 100px; 
     }
 }
 
-/* For screens 768px and below */
+
 @media(max-width: 768px) {
     .achievement-box {
         padding: 10px;
@@ -713,20 +711,21 @@ grid-template-columns: repeat(2,1fr);
     }
 
     .images-container img {
-        width: 80px; /* Adjust the width as needed */
+        width: 80px; 
     }
 }
 
-/* For screens 617px and below */
+
 @media(max-width: 617px) {
     .images-container img {
-        width: 70px; /* Adjust the width as needed */
+        width: 70px; 
     }
 }
 
-/* For screens 450px and below */
+
 @media(max-width: 450px) {
     .images-container img {
-        width: 60px; /* Adjust the width as needed */
+        width: 60px;
     }
+
 }
