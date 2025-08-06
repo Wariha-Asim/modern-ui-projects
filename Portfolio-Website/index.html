@@ -1,1 +1,222 @@
-#
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <!--font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--main css-->
+    <link rel="stylesheet" href="style.css">
+    <!--js library cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+    <!--Header design-->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+             <a href="#hobbies">Hobbies</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!--Home section-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>It's my</h1>
+            <h1>Frontend Developer Portfolio</h1>
+            <h3>And I'm a <span class="text"></span></h3>
+            <p>I develop and transform code into interactive and engaging web designs. As a frontend developer, I focus on creating intuitive and visually appealing user interfaces. As a web developer, I’m dedicated to building dynamic and efficient digital solutions and continuously learning new technologies to enhance overall web functionality and many more....</p>
+            <div class="socialmedia">
+               
+                <a href="https://www.linkedin.com/in/warihaasim/"><i class="fa-brands fa-linkedin"></i></a>
+                
+                <a href="https://github.com/Wariha-Asim"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="#" class="btn">Download Resume</a>
+            <a href="#" class="btn1">Hire me</a>
+        </div>
+        <div class="home-img">
+            <img src="bg1.png" alt="">
+        </div>
+       
+    </section>
+
+    <!--About section-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="hey1.png" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Frontend Developer</h3>
+            <p>
+                As a computer science undergraduate and passionate Front-end Developer with expertise in HTML, CSS, and JavaScript, I thrive on crafting visually appealing and user-friendly web interfaces to ensure a seamless and engaging experience for users.
+                <br><br>
+                In addition to my front-end skills, I have a strong foundation in C#, demonstrated through various projects including developing with Windows Forms. My skills also extend to Python and SQL, enabling me to build efficient back-end solutions and manage databases effectively.
+                <br><br>
+                Currently, I am enhancing my skills in React.js to create dynamic and responsive web applications. My knowledge of frameworks like Django further empowers me to develop full-stack solutions when needed.
+            </p>
+    
+            <!-- Tabs for Education and Services -->
+            <div class="tabs">
+                <button class="tab-link active" onclick="openTab(event, 'education')">Education</button>
+                <button class="tab-link" onclick="openTab(event, 'services')">Services</button>
+            </div>
+    
+            <!-- Education Content -->
+            <div class="tab-content" id="education">
+                <div class="education-item">
+                    <p class="education-institution">Sir Syed University of Engineering and Technology</p>
+                    <p class="education-details">Pursuing Bachelors of Science in Computer Science (BSCS)</p>
+                    <p class="education-details">GPA: 3.89</p>
+                </div>
+                <div class="education-item">
+                    <p class="education-institution">St. Lawrence College For Women</p>
+                    <p class="education-details">Intermediate | Computer Science</p>
+                    <p class="education-details">Grade: A+</p>
+                </div>
+                <div class="education-item">
+                    <p class="education-institution">St. Lawrence School</p>
+                    <p class="education-details">Matric | Science</p>
+                    <p class="education-details">Grade: A+</p>
+                </div>
+            </div>
+    
+            <!-- Services Content -->
+            <div class="tab-content" id="services" style="display:none;">
+                <div class="services-item">
+                    <p class="service-title">Front-End Development</p>
+                    <p class="service-details">   I offer the design and implementation of engaging, responsive user interfaces using HTML, CSS, and JavaScript. 
+                        My goal is to create intuitive web experiences that meet users' needs and enhance their interaction with your website. </p>
+                </div>
+                <!-- <div class="services-item">
+                    <p class="service-title">C# Development</p>
+                    <p class="service-details">
+                        I offer expertise in C# for Windows Forms and SQL Server for database management. 
+                        My focus is on developing secure, scalable, and efficient C# applications, ensuring robust performance and effective data management.
+                    </p>
+                </div> -->
+                <div class="services-item">
+                    <p class="service-title">Tutoring and Programming Training</p>
+                    <p class="service-details"> I provide tutoring in Python & Computer science basics and programming concepts covering a range of programming topics from basic syntax to oop 
+                        My goal is to help students understand core programming principles and develop problem-solving skills</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!--skill section-->
+<section class="skills" id="skills">
+    <h2 class="heading">My <span>Skills</span></h2>
+    <div class="skill-container">
+        <div class="skill">
+            <p class="skill-title">HTML</p>
+            <div class="circle html" data-percent="70">
+                <span class="percent">70%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <p class="skill-title">CSS</p>
+            <div class="circle css" data-percent="65">
+                <span class="percent">65%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <p class="skill-title">JavaScript</p>
+            <div class="circle javascript" data-percent="40">
+                <span class="percent">40%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <p class="skill-title">C#</p>
+            <div class="circle csharp" data-percent="75">
+                <span class="percent">75%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <p class="skill-title">Python</p>
+            <div class="circle python" data-percent="30">
+                <span class="percent">30%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <p class="skill-title">SQL</p>
+            <div class="circle sql" data-percent="55">
+                <span class="percent">55%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <p class="skill-title">Django</p>
+            <div class="circle django" data-percent="35">
+                <span class="percent">35%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <p class="skill-title">React.js</p>
+            <div class="circle reactjs" data-percent="20">
+                <span class="percent">20%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <p class="skill-title">Bootstrap</p>
+            <div class="circle Bootstrap" data-percent="10">
+                <span class="percent">50%</span>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Hobbies section-->
+
+<section class="hobbies" id="hobbies">
+    <h2 class="heading">My <span>Hobbies</span></h2>
+    <div class="hobby-container vertical">
+        <div class="hobby-card"><i class="fa-solid fa-camera"></i> Photography</div>
+        <div class="hobby-card"><i class="fa-solid fa-leaf"></i> Gardening</div>
+        <div class="hobby-card"><i class="fa-solid fa-pen-nib"></i> Content Creation</div>
+        <div class="hobby-card"><i class="fa-solid fa-lightbulb"></i> Problem Solving</div>
+    </div>
+</section>
+
+
+<!---contact section---->
+
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <div class="input-box">
+            <input type="hidden" name="access_key" value="87302817-0549-4c93-a484-1ee1c74e9d2e">
+            <input type="text" name="full name"placeholder="Full Name">
+            <input type="email" name="email" placeholder="Email Address">
+        </div>
+        <div class="input-box">
+            <input type="number" name="mobile" placeholder="Mobile Number">
+            <input type="text" name="subject" placeholder="Email Subject">
+        </div>
+        <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <input type="submit" name="submit" value="Send Message" class="btn">
+    </form>
+</section>
+
+<!--footer section---->
+
+<footer class="footer">
+    <div class="footer-text">
+        <p>Copyright &copy; 2024 | All Rights Reserved.</p>
+    </div>
+    <div class="footer-icontop">
+        <a href="#home  "><i class="fa-solid fa-angle-up"></i></a>
+    </div>
+</footer>
+
+
+<!-- scroll reveal js -->
+<script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+</html>
