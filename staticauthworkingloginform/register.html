@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html">Login</a>
+  <a href="register.html" class="active">Register</a>
+  <a href="forgetpass.html">Forgot Password</a>
+  <a href="changepass.html">Change Password</a>
+  <a href="dashboard.html">Dashboard</a>
+</div>
+
+<div class="container">
+  <h2>Register</h2>
+  <form id="registerForm">
+    <label for="fullname">Full Name</label>
+    <input type="text" id="fullname" name="fullname" placeholder="Your Name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+    <button type="submit">Register</button>
+  </form>
+  <div class="link">
+    Already have an account? <a href="index.html">Login</a>
+  </div>
+</div>
+
+<!-- JS file include -->
+<script src="register.js"></script>
+</body>
+</html>
