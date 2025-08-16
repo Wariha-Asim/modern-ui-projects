@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Travelly — explore destinations, plan trips, and get inspired." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                sky: '#B1F0F7',
+                blue: '#81BFDA',
+                cream: '#F5F0CD',
+                gold: '#FADA7A'
+              }
+            },
+            fontFamily: {
+              sans: ['Poppins', 'ui-sans-serif', 'system-ui'],
+              body: ['Roboto', 'ui-sans-serif', 'system-ui']
+            },
+            boxShadow: {
+              soft: '0 10px 25px rgba(0,0,0,0.08)'
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+
+    <title>Contact — Travelly</title>
+  </head>
+  <body class="font-body text-gray-800">
+   <header class="sticky top-0 z-40 bg-[rgba(177,240,247,0.8)] backdrop-blur border-b border-gray-200">
+
+  <nav class="container mx-auto flex items-center justify-between px-4 py-3">
+    <a href="index.html" class="flex items-center gap-2 font-bold text-xl">
+      <span class="inline-block rounded-xl p-2 bg-[color:var(--gold)]" aria-hidden="true">🌍</span>
+      <span>Travelly</span>
+    </a>
+    <button id="menuBtn" class="md:hidden inline-flex items-center justify-center rounded-xl px-3 py-2 border hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-brand-blue" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open Menu">☰</button>
+    <ul class="hidden md:flex items-center gap-6 font-medium">
+      <li><a class="navlink hover:text-brand-blue focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue" href="index.html">Home</a></li>
+      <li><a class="navlink hover:text-brand-blue" href="about.html">About</a></li>
+      <li><a class="navlink hover:text-brand-blue" href="contact.html">Contact</a></li>
+      <li><a class="navlink hover:text-brand-blue" href="policies.html">Policies</a></li>
+    </ul>
+  </nav>
+  <div id="mobileMenu" class="md:hidden hidden border-t border-gray-200 bg-[color:var(--sky)]">
+    <ul class="px-4 py-3 space-y-2">
+      <li><a class="block rounded-xl px-3 py-2 hover:bg-gray-50" href="index.html">Home</a></li>
+      <li><a class="block rounded-xl px-3 py-2 hover:bg-gray-50" href="about.html">About</a></li>
+      <li><a class="block rounded-xl px-3 py-2 hover:bg-gray-50" href="contact.html">Contact</a></li>
+      <li><a class="block rounded-xl px-3 py-2 hover:bg-gray-50" href="policies.html">Policies</a></li>
+    </ul>
+  </div>
+</header>
+
+
+    <main class="container mx-auto px-4 py-12">
+      <div class="grid gap-10 md:grid-cols-2">
+       
+        <section>
+          <h1 class="text-3xl md:text-4xl font-bold">We’d love to help plan your next adventure!!</h1>
+          <p class="mt-3 text-gray-700">Questions, ideas, or ready to plan? Send us a message.</p>
+          <form action="https://api.web3forms.com/submit" method="POST" class="mt-6 space-y-4 bg-[color:var(--sky)] p-6 rounded-2xl shadow-soft border">
+  
+  
+  <input type="hidden" name="access_key" value="87302817-0549-4c93-a484-1ee1c74e9d2e">
+  <div>
+    <label class="block text-sm font-medium mb-1" for="name">Name</label>
+    <input id="name" name="name" type="text" required placeholder="Your name" class="w-full rounded-xl border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand-blue" />
+  </div>
+
+  <div>
+    <label class="block text-sm font-medium mb-1" for="email">Email</label>
+    <input id="email" name="email" type="email" required placeholder="you@example.com" class="w-full rounded-xl border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand-blue" />
+  </div>
+
+  <div>
+    <label class="block text-sm font-medium mb-1" for="message">Message</label>
+    <textarea id="message" name="message" required rows="5" placeholder="How can we help?" class="w-full rounded-xl border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brand-blue"></textarea>
+  </div>
+
+  <button type="submit" class="w-full md:w-auto rounded-2xl px-6 py-3 bg-[color:var(--gold)] text-gray-900 font-semibold shadow-soft hover:translate-y-[-1px] transition">
+    Send Message
+  </button>
+</form>
+
+        </section>
+
+       
+        <section class="space-y-6">
+          <div class="bg-[color:var(--sky)] p-6 rounded-2xl shadow-soft border">
+            <h2 class="text-xl font-semibold">Contact Details</h2>
+            <ul class="mt-3 space-y-2 text-gray-700">
+              <li>📞 +92 300 000 0000</li>
+              <li>✉️ hello@travelly.co</li>
+              <li>📍 Office 12, Clifton, Karachi</li>
+            </ul>
+          </div>
+          <div class="rounded-2xl overflow-hidden shadow-soft border">
+            <iframe
+              title="Travelly HQ"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.1839684209213!2d66.995!3d24.8607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33bb2a5b89c9b%3A0x4a0d9eb9e9dcf3a6!2sClifton%2C%20Karachi!5e0!3m2!1sen!2sPK!4v1687712345678"
+              width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="mt-16 border-t border-gray-200 bg-[color:var(--sky)]">
+  <div class="container mx-auto px-4 py-10 grid gap-8 md:grid-cols-3">
+    <div>
+      <h3 class="text-lg font-semibold mb-2">Travelly</h3>
+      <p class="text-sm text-gray-600">We craft inspiring journeys and unforgettable experiences worldwide.</p>
+    </div>
+    <div>
+      <h4 class="font-semibold mb-2">Contact</h4>
+      <ul class="text-sm text-gray-700 space-y-1">
+        <li>📞 +92 300 000 0000</li>
+        <li>✉️ hello@travelly.co</li>
+        <li>📍 Karachi, Pakistan</li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-semibold mb-2">Follow</h4>
+      <div class="flex gap-3">
+  <a href="#"><i class="fab fa-instagram text-xl"></i></a>
+  <a href="#"><i class="fab fa-facebook text-xl"></i></a>
+  <a href="#"><i class="fab fa-twitter text-xl"></i></a>
+</div>
+
+    </div>
+  </div>
+  <div class="py-4 bg-gray-50 text-center text-xs text-gray-600">© 2025 Travelly. All rights reserved.</div>
+</footer>
+
+  </body>
+</html>

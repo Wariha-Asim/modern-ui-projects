@@ -1,0 +1,13 @@
+:root {
+  --sky: #B1F0F7;
+  --blue: #81BFDA;
+  --cream: #F5F0CD;
+  --gold: #FADA7A;
+}
+
+html, body { scroll-behavior: smooth; }
+
+
+.badge-swatch {
+  display:inline-block; width:1rem; height:1rem; border-radius:999px;
+}

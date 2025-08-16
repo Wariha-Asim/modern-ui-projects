@@ -1,1 +1,168 @@
-#
+<!doctype html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="JourneyMates — explore destinations, plan trips, and get inspired." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                sky: '#B1F0F7',
+                blue: '#81BFDA',
+                cream: '#F5F0CD',
+                gold: '#FADA7A'
+              }
+            },
+            fontFamily: {
+              sans: ['Poppins', 'ui-sans-serif', 'system-ui'],
+              body: ['Roboto', 'ui-sans-serif', 'system-ui']
+            },
+            boxShadow: {
+              soft: '0 10px 25px rgba(0,0,0,0.08)'
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+
+    <title>JourneyMates — Where Will Your Next Adventure Take You?</title>
+  </head>
+  <body class="font-body text-gray-800">
+   <header class="sticky top-0 z-40 bg-[rgba(177,240,247,0.8)] backdrop-blur border-b border-gray-200">
+
+      <nav class="container mx-auto flex items-center justify-between px-4 py-3">
+        <a href="index.html" class="flex items-center gap-2 font-bold text-xl">
+          <span class="inline-block rounded-xl p-2 bg-[color:var(--gold)]" aria-hidden="true">🌍</span>
+          <span>JourneyMates</span>
+        </a>
+        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center rounded-xl px-3 py-2 border hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-brand-blue" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open Menu">☰</button>
+        <ul class="hidden md:flex items-center gap-6 font-medium">
+          <li><a class="navlink hover:text-brand-blue focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue" href="index.html">Home</a></li>
+          <li><a class="navlink hover:text-brand-blue" href="about.html">About</a></li>
+          <li><a class="navlink hover:text-brand-blue" href="contact.html">Contact</a></li>
+          <li><a class="navlink hover:text-brand-blue" href="policies.html">Policies</a></li>
+        </ul>
+      </nav>
+      <div id="mobileMenu" class="md:hidden hidden border-t border-gray-200 bg-white">
+        <ul class="px-4 py-3 space-y-2">
+          <li><a class="block rounded-xl px-3 py-2 hover:bg-gray-50" href="index.html">Home</a></li>
+          <li><a class="block rounded-xl px-3 py-2 hover:bg-gray-50" href="about.html">About</a></li>
+          <li><a class="block rounded-xl px-3 py-2 hover:bg-gray-50" href="contact.html">Contact</a></li>
+          <li><a class="block rounded-xl px-3 py-2 hover:bg-gray-50" href="policies.html">Policies</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="relative">
+      <img src="https://images.unsplash.com/photo-1488085061387-422e29b40080?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Adventure landscape with mountains and lake" class="h-[70vh] w-full object-cover" />
+      <div class="absolute inset-0 bg-black/40"></div>
+      <div class="absolute inset-0 flex items-center">
+        <div class="container mx-auto px-4 text-white">
+          <h1 class="max-w-2xl text-4xl md:text-6xl font-bold leading-tight">Adventure Awaits — Where Will You Go Next?</h1>
+          <p class="mt-4 max-w-xl text-lg md:text-xl text-white/90">Explore breathtaking beaches, majestic mountains, and hidden gems that make every journey unforgettable.</p>
+          <a href="#destinations" class="mt-8 inline-block rounded-2xl px-6 py-3 bg-[color:var(--gold)] text-gray-900 font-semibold shadow-soft hover:translate-y-[-1px] transition">Start Exploring</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="destinations" class="container mx-auto px-4 py-14">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6">Top Picks for Your Next Getaway</h2>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <article class="bg-[color:var(--sky)] rounded-2xl overflow-hidden shadow-soft border">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop" alt="Bali Indonesia" class="h-48 w-full object-cover" />
+          <div class="p-5">
+            <h3 class="font-semibold text-lg">Bali, Indonesia</h3>
+            <p class="mt-2 text-sm text-gray-600">Tropical beaches, lush rice terraces, and vibrant cultural experiences.</p>
+            <a href="#" class="mt-4 inline-block text-sm font-semibold text-brand-blue hover:underline">Plan my Trip →</a>
+          </div>
+        </article>
+
+        <article class="bg-[color:var(--sky)] rounded-2xl overflow-hidden shadow-soft border">
+          <img src="https://images.unsplash.com/photo-1549693578-d683be217e58?q=80&w=1600&auto=format&fit=crop" alt="Paris France" class="h-48 w-full object-cover" />
+          <div class="p-5">
+            <h3 class="font-semibold text-lg">Paris, France</h3>
+            <p class="mt-2 text-sm text-gray-600">Eiffel Tower, charming streets, and world-class art and cuisine.</p>
+            <a href="#" class="mt-4 inline-block text-sm font-semibold text-brand-blue hover:underline">Plan my Trip →</a>
+          </div>
+        </article>
+
+        <article class="bg-[color:var(--sky)] rounded-2xl overflow-hidden shadow-soft border">
+          <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1600&auto=format&fit=crop" alt="Skardu Pakistan" class="h-48 w-full object-cover" />
+          <div class="p-5">
+            <h3 class="font-semibold text-lg">Skardu, Pakistan</h3>
+            <p class="mt-2 text-sm text-gray-600">Karakoram’s rugged beauty — turquoise lakes and starry skies.</p>
+            <a href="#" class="mt-4 inline-block text-sm font-semibold text-brand-blue hover:underline">Plan my Trip →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="bg-[color:var(--sky)]/60 py-14">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl md:text-3xl font-bold mb-6">What Travelers Say</h2>
+        <div class="grid gap-6 md:grid-cols-3">
+          <figure class="bg-[color:var(--sky)] rounded-2xl p-6 shadow-soft border">
+            <div class="flex items-center gap-3">
+              <img src="https://images.unsplash.com/photo-1605369572399-05d8d64a0f6e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="h-12 w-12 rounded-full object-cover" alt="User avatar" />
+              <figcaption class="font-semibold">Ayesha K.</figcaption>
+            </div>
+            <blockquote class="mt-3 text-sm text-gray-700">“The itinerary was spot on and absolutely stress‑free. Can’t wait to book again!”</blockquote>
+          </figure>
+
+          <figure class="bg-[color:var(--sky)] rounded-2xl p-6 shadow-soft border">
+            <div class="flex items-center gap-3">
+              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="h-12 w-12 rounded-full object-cover" alt="User avatar" />
+              <figcaption class="font-semibold">Rana S.</figcaption>
+            </div>
+            <blockquote class="mt-3 text-sm text-gray-700">“Loved the hotel choices and local guides. Everything felt curated.”</blockquote>
+          </figure>
+
+          <figure class="bg-[color:var(--sky)] rounded-2xl p-6 shadow-soft border">
+            <div class="flex items-center gap-3">
+              <img src="https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="h-12 w-12 rounded-full object-cover" alt="User avatar" />
+              <figcaption class="font-semibold">Zahid R.</figcaption>
+            </div>
+            <blockquote class="mt-3 text-sm text-gray-700">“Super responsive team and flawless planning. 10/10 experience.”</blockquote>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <footer class="mt-16 border-t border-gray-200 bg-[color:var(--sky)]">
+      <div class="container mx-auto px-4 py-10 grid gap-8 md:grid-cols-3">
+        <div>
+          <h3 class="text-lg font-semibold mb-2">JourneyMates</h3>
+          <p class="text-sm text-gray-600">We craft inspiring journeys and unforgettable experiences worldwide.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-2">Contact</h4>
+          <ul class="text-sm text-gray-700 space-y-1">
+            <li>📞 +92 389 520 0023</li>
+            <li>✉️ hello@JourneyMates.co</li>
+            <li>📍 Karachi, Pakistan</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-2">Follow</h4>
+          <div class="flex gap-3">
+            <a href="#"><i class="fab fa-instagram text-xl"></i></a>
+            <a href="#"><i class="fab fa-facebook text-xl"></i></a>
+            <a href="#"><i class="fab fa-twitter text-xl"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="py-4 bg-gray-50 text-center text-xs text-gray-600">© 2025 JourneyMates. All rights reserved.</div>
+    </footer>
+
+  </body>
+</html>
