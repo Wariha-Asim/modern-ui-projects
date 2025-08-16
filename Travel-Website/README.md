@@ -1,4 +1,4 @@
-# Travelly — Multi-Page Travel Website
+# JourneyMates Multi-Page Travel Website
 
 A clean, responsive, multi-page travel website built with semantic HTML5, Tailwind CSS (via CDN), and vanilla JavaScript.
 
