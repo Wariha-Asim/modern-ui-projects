@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureAuth | Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">
+            <i class="fas fa-lock"></i> SecureAuth
+        </a>
+        <ul class="navbar-nav">
+            <li><a href="login.html" class="nav-link">Login</a></li>
+            <li><a href="register.html" class="nav-link">Register</a></li>
+            <li><a href="reset-password.html" class="nav-link">Reset Password</a></li>
+        </ul>
+    </nav>
 
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h1>Welcome to SecureAuth</h1>
+                <p>Your secure authentication solution</p>
+            </div>
+            
+            <div class="card-body">
+                <div style="text-align: center; padding: 30px 0;">
+                    <i class="fas fa-shield-alt" style="font-size: 4rem; color: var(--primary); margin-bottom: 20px;"></i>
+                    <h2 style="margin-bottom: 15px;">Secure User Authentication</h2>
+                    <p style="margin-bottom: 25px; color: #666;">A complete authentication system with login, registration, and password reset functionality.</p>
+                    <div style="display: flex; gap: 15px; justify-content: center;">
+                        <a href="login.html" class="btn btn-primary">Sign In</a>
+                        <a href="register.html" class="btn btn-secondary">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
